@@ -1,0 +1,10 @@
+.idea
+.venv
+ai_model
+config/.env
+config/ses.session
+config/ses.session-journal
+__pycache__
+logs/
+deprecated/
+config/_kribrum_credentials.py
