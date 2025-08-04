@@ -19,6 +19,7 @@ class GWProviders:
     RandomGiveBot_Bot = 17
     ContestyBot = 18
     ContestMasterV3 = 19
+    Portals = 20
     MegaMarket = 101
     BigLuckBot = 103
     Aurora = 104
@@ -52,6 +53,7 @@ GWProvidersKeywords = {
     "randomgivebot_bot": GWProviders.RandomGiveBot_Bot,
     "contestybot": GWProviders.ContestyBot,
     "contentmasterv3bot": GWProviders.ContestMasterV3,
+    "portals": GWProviders.Portals,
     "mmgift_bot": GWProviders.MegaMarket,
     "big_luck_bot": GWProviders.BigLuckBot,
     "auroragivebot": GWProviders.Aurora,
@@ -81,6 +83,7 @@ GWProvidersPostTags = {
     GWProviders.RandomGiveBot_Bot: "RandomGivebot_bot 🙈",
     GWProviders.ContestyBot: "Contestybot 🙈",
     GWProviders.ContestMasterV3: "ContestMasterV3 🙈",
+    GWProviders.Portals: "Portals 🙈",
     GWProviders.MegaMarket: "MegaMarket 🛒",
     GWProviders.BigLuckBot: "Bigluckbot 🟣",
     GWProviders.Aurora: "Aurora 🙈",

@@ -36,17 +36,12 @@ BOTS_ARR = [
 TGDATA_DSN = os.getenv("TGDATA_DSN")
 TG_AIODBP = AIODBP(TGDATA_DSN)
 DATA_BOTS_TABLE = "bots_data"
+WINNERS_TABLE = "winners"
 
 # gws
 GWS_DSN = os.getenv("GWS_DSN")
 GWS_AIODBP = AIODBP(GWS_DSN)
 VAULT_TABLE = "vault"
-
-# gws
-BMB_DSN = os.getenv("BMB_DSN")
-BMB_AIODBP = AIODBP(BMB_DSN)
-WINNERS_TABLE = "winners"
-
 
 class BotToken:
     LOGS = os.getenv("LOGS_BOTTOKEN")

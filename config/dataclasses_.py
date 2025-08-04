@@ -47,42 +47,6 @@ class _UaSchema:
 
 class Database:
 
-    class BMB:
-
-        @dataclass
-        class Winners:
-            class Status:
-                NOT_SEEN = "👁 Не просмотрено"
-
-            win_id: str
-            bot: str
-            channel_id: int
-            message_id: int
-            status: Status
-            date_won: datetime
-            link_message: Optional[str]
-            channel_name: Optional[str]
-            channel_nick: Optional[str]
-            prize: Optional[str]
-            description: Optional[str]
-            winners_message_id: Optional[int]
-            date_received: None
-
-            class Keys:
-                WIN_ID = "win_id"
-                BOT = "bot"
-                LINK_MESSAGE = "link_message"
-                CHANNEL_NAME = "channel_name"
-                CHANNEL_NICK = "channel_nick"
-                CHANNEL_ID = "channel_id"
-                message_id = "message_id"
-                PRIZE = "prize"
-                DESCRIPTION = "description"
-                STATUS = "status"
-                DATE_WON = "date_won"
-                WINNERS_MESSAGE_ID = "winners_message_id"
-                DATE_RECEIVED = "date_received"
-
     class GWS:
 
         @dataclass
@@ -134,3 +98,38 @@ class Database:
                 FULL_PROXY = "full_proxy"
                 BOT_STR_ID = "bot_str_id"
                 USER_AGENT = "user_agent"
+                
+
+        @dataclass
+        class Winners:
+            class Status:
+                NOT_SEEN = "👁 Не просмотрено"
+
+            win_id: str
+            bot: str
+            channel_id: int
+            message_id: int
+            status: Status
+            date_won: datetime
+            link_message: Optional[str]
+            channel_name: Optional[str]
+            channel_nick: Optional[str]
+            prize: Optional[str]
+            description: Optional[str]
+            winners_message_id: Optional[int]
+            date_received: None
+
+            class Keys:
+                WIN_ID = "win_id"
+                BOT = "bot"
+                LINK_MESSAGE = "link_message"
+                CHANNEL_NAME = "channel_name"
+                CHANNEL_NICK = "channel_nick"
+                CHANNEL_ID = "channel_id"
+                message_id = "message_id"
+                PRIZE = "prize"
+                DESCRIPTION = "description"
+                STATUS = "status"
+                DATE_WON = "date_won"
+                WINNERS_MESSAGE_ID = "winners_message_id"
+                DATE_RECEIVED = "date_received"

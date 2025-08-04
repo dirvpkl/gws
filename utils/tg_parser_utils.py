@@ -18,7 +18,7 @@ from config.enums import GWProvidersKeywords as GWPK
 from config.dataclasses_ import Database as D
 VaultObject = D.GWS.Vault
 VaultKeys = D.GWS.Vault.Keys
-DBW = D.BMB.Winners
+DBW = D.TelegramData.Winners
 TBDB = D.TelegramData.BotsData
 TDBDKeys = D.TelegramData.BotsData.Keys
 
@@ -28,7 +28,6 @@ from config.settings import CHAT_IDS_TO_REPLY
 from config.settings import BotToken, ChatID, ThreadID
 from config.settings import TgParser
 
-from config.settings import BMB_AIODBP
 from config.settings import WINNERS_TABLE
 from config.settings import GWS_AIODBP
 from config.settings import VAULT_TABLE
@@ -226,7 +225,7 @@ link: {post_link}"""
         if do_post:
             won_messages.append(unique)
 
-            doc = await BMB_AIODBP.read(table=WINNERS_TABLE, val=win_obj.link_message, key=DBW.Keys.LINK_MESSAGE)
+            doc = await TG_AIODBP.read(table=WINNERS_TABLE, val=win_obj.link_message, key=DBW.Keys.LINK_MESSAGE)
 
             if not doc or doc.get(DBW.Keys.BOT) != k_username:
 
@@ -239,5 +238,5 @@ link: {post_link}"""
 
                 win_obj.winners_message_id = res["result"]["message_id"]
 
-                await BMB_AIODBP.append(table=WINNERS_TABLE, obj=win_obj.__dict__)
+                await TG_AIODBP.append(table=WINNERS_TABLE, obj=win_obj.__dict__)
 
