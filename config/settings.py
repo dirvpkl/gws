@@ -5,7 +5,7 @@ from datetime import time
 import redis.asyncio as redis
 from dotenv import load_dotenv
 from for_easy import AIODBP
-import _kribrum_credentials
+from config import _kribrum_credentials
 
 REDISKA = redis.Redis()
 

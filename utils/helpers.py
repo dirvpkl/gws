@@ -7,7 +7,7 @@ import requests
 from cloudscraper import create_scraper
 from requests.models import Response
 
-import pattern_builder as PB
+from utils import pattern_builder as PB
 
 from config.enums import GWProvidersPostTags as GWPPT
 

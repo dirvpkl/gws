@@ -128,10 +128,9 @@ async def process_message(message, client):
 
     except ValueError:
         return  # no usernames on this channel
-    except ChannelPrivateError as e:
+    except ChannelPrivateError:
         return
 
-    type_parser = TgParser.NAME
     # --- creating obj
 
     obj_vault = VaultObject(
