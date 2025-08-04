@@ -1,0 +1,15 @@
+asyncpg
+dotenv
+motor
+python-dotenv
+redis
+torch
+
+dateparser
+beautifulsoup4
+Telethon
+for_easy
+aiohttp
+requests
+cloudscraper
+transformers

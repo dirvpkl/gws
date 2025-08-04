@@ -5,8 +5,8 @@ import aiohttp
 import asyncio
 import traceback
 from bs4 import BeautifulSoup
-from typing import Dict, List, Optional
-from markdown_text_clean import clean_text
+from typing import Dict, Optional
+from utils.clean_markdown import clean_text
 
 # ---
 from config.settings import ESCAPE_WORDS_CLEAR

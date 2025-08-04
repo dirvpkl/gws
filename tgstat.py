@@ -6,8 +6,6 @@ from typing import Optional, List
 from datetime import datetime, timedelta
 from enum import Enum
 
-from bs4 import BeautifulSoup
-
 # ---
 from config.settings import BotToken, ChatID, ThreadID
 # ---

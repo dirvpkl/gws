@@ -1,6 +1,3 @@
-from datetime import time
-
-
 class GWProviders:
     Unknown = 0
     BlessMeBot = 1
