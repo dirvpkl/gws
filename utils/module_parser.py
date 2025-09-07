@@ -97,7 +97,7 @@ def _analyze_message_for_gw(req_text, channel_nick, message_id) -> GWP:
         if gw_botname in GWPK.keys():
             return GWPK[gw_botname]
         else:
-            logging.warning(f'known button nor url in text was found: {channel_nick} {message_id}')
+            logging.warning(f'unknown button nor url in text was found: {channel_nick} {message_id}')
             return GWP.Unknown
     # button search
     else:
